@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ピジョンパラダイス</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+<body>
+<div class="container">
+  <h1>ピジョンパラダイス</h1>
+  <div id="game-container">
+    <div class="card" id="main-game">
+      <h2>ハト力: <span id="hato-power">0</span></h2>
+      <div id="pigeon-container">
+        <div id="pigeon"></div>
+      </div>
+      <div>
+        <button id="click-button">エサをあげる</button>
+        <button id="click-fever" onclick="feverTimeEffect()">フィーバータイム！！！</button>
+      </div>
+    </div>
+    <div id="upgrades">
+      <h2>アップグレード</h2>
+      <ul id="upgrade-list"></ul>
+    </div>
+  </div>
+  <div id="achievements">
+    <h2>実績</h2>
+    <div id="achievement-list"></div>
+  </div>
+  <div class="bgm-area">
+    <div>
+      <p>三宅島</p>
+      <audio controls loop src="./audio/bgm/bgm_mushikui.mp3"></audio>
+    </div>
+    <div>
+      <p>夏の山</p>
+      <audio controls loop src="./audio/bgm/bgm_summer.mp3"></audio>
+    </div>
+    <div>
+      <p>すずめ</p>
+      <audio controls loop src="./audio/bgm/bgm_nature.mp3"></audio>
+    </div>
+  </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>
