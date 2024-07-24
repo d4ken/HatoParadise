@@ -85,7 +85,7 @@ function addPigeon() {
 function updatePigeons() {
   const newPigeonCount = Math.floor(Math.sqrt(hatoPower) / 2);
   while (pigeonCount < newPigeonCount) {
-    const audio = new Audio("../audio/se/pigeon.mp3");
+    const audio = document.getElementById("pigeon_audio");
     audio.currentTime = 0;
     audio.play();
     if (pigeonCount < 30) {
@@ -95,7 +95,7 @@ function updatePigeons() {
 }
 
 // フィーバータイム演出
-const feverMusic = new Audio("../audio/bgm/cadd_summer_fever_chorus.mp3");
+const feverMusic = document.getElementById("btn_fever_audio");
 feverMusic.volume = 0.1;
 let feverTime = false;
 
